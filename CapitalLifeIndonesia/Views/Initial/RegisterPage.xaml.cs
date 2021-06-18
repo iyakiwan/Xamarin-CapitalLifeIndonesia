@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Initial
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class RegisterPage : ContentPage
     {
-        public LoginPage()
+        public RegisterPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
