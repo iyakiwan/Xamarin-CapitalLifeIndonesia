@@ -10,17 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Initial
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegisterPage : ContentPage
+    public partial class VerificationPage : ContentPage
     {
-        public RegisterPage()
+        public VerificationPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void ButtonRegister_Clicked(object sender, EventArgs e)
+        private async void LabelResend_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new VerificationPage());
+            Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
+            await Navigation.PushAsync(new MainTestPage());
         }
     }
 }

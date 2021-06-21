@@ -17,5 +17,15 @@ namespace CapitalLifeIndonesia.Views.Initial
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private async void onRegisterTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
+        }
+
+        private async void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VerificationPage());
+        }
     }
 }

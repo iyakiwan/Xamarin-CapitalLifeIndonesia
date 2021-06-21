@@ -5,22 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Vonage;
 using Xamarin.Forms.Xaml;
 
 namespace CapitalLifeIndonesia.Views.Initial
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegisterPage : ContentPage
+    public partial class MainTestPage : ContentPage
     {
-        public RegisterPage()
+        public MainTestPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
+
+            /*if (!CrossVonage.Current.TryStartSession())
+            {
+                return;
+            }*/
         }
 
-        private async void ButtonRegister_Clicked(object sender, EventArgs e)
+        private async void BtnVidCall_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new VerificationPage());
+            await Navigation.PushAsync(new AppShell());
         }
     }
 }

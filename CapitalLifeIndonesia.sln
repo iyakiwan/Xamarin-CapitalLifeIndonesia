@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapitalLifeIndonesia.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapitalLifeIndonesia.iOS", "CapitalLifeIndonesia.iOS\CapitalLifeIndonesia.iOS.csproj", "{406A0429-6FE7-4827-9C29-FF0D9C58B9CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapitalLifeIndonesia", "CapitalLifeIndonesia\CapitalLifeIndonesia.csproj", "{07603FF5-962B-47F4-9E27-5C28DAC2379F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapitalLifeIndonesia", "CapitalLifeIndonesia\CapitalLifeIndonesia.csproj", "{07603FF5-962B-47F4-9E27-5C28DAC2379F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
