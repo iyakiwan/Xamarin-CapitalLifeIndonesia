@@ -8,12 +8,19 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />  
-    <PackageReference Include="Xamarin.Forms.Vonage" Version="1.0.0" />
+    <PackageReference Include="Xamarin.Forms.Vonage" Version="1.0.0" />  
+    <PackageReference Include="XamarinForms.CardView.NetStandard" Version="1.1.1.5" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="ButtonNavShell.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Claim\CardView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Claim\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Initial\LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

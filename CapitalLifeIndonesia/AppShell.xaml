@@ -2,6 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:CapitalLifeIndonesia.Views"
+       xmlns:claim="clr-namespace:CapitalLifeIndonesia.Views.Claim"
        Title="CapitalLifeIndonesia"
        xmlns:views="clr-namespace:CapitalLifeIndonesia.Views"
        x:Class="CapitalLifeIndonesia.AppShell">
@@ -10,7 +11,7 @@
         <ShellContent Icon="icon_home.png"
                       ContentTemplate="{DataTemplate views:LoginPage}" />
         <ShellContent Icon="icon_claim.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
+                      ContentTemplate="{DataTemplate claim:MainPage}" />
         <ShellContent Icon="icon_policy.png"
                       ContentTemplate="{DataTemplate views:LoginPage}" />
         <ShellContent Icon="icon_appoinment.png"
