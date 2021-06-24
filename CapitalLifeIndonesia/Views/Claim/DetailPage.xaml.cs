@@ -10,11 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Claim
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CardView : ContentView
+    public partial class DetailPage : ContentPage
     {
-        public CardView()
+        public DetailPage()
         {
             InitializeComponent();
+            Shell.SetTabBarIsVisible(this, false);
         }
     }
 }

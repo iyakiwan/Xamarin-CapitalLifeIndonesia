@@ -16,5 +16,10 @@ namespace CapitalLifeIndonesia.Views.Claim
         {
             InitializeComponent();
         }
+
+        private async void OnDetail(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(DetailPage));
+        }
     }
 }
