@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Vonage;
 using Xamarin.Forms.Xaml;
 
 namespace CapitalLifeIndonesia.Views.Claim
@@ -16,6 +17,15 @@ namespace CapitalLifeIndonesia.Views.Claim
         {
             InitializeComponent();
             Shell.SetTabBarIsVisible(this, false);
+        }
+
+        private async void OnVideoCall(object sender, EventArgs e)
+        {
+            if (!CrossVonage.Current.TryStartSession())
+            {
+                return;
+            }
+            await Shell.Current.GoToAsync(nameof(VideoCallPage));
         }
     }
 }

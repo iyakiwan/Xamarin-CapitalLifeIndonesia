@@ -15,6 +15,7 @@ namespace CapitalLifeIndonesia
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
+            Routing.RegisterRoute(nameof(VideoCallPage), typeof(VideoCallPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

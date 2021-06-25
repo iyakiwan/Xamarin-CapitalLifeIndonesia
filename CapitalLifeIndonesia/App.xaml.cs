@@ -21,8 +21,8 @@ namespace CapitalLifeIndonesia
         protected override void OnStart()
         {
             CrossVonage.Current.ApiKey = "47252544";
-            CrossVonage.Current.UserToken = "T1==cGFydG5lcl9pZD00NzI1MjU0NCZzaWc9YTU0ZWVlNTQzMWU5MmYzNmRlNGQ3MjRlYjk2OWFmNzZjZmNiMjdiNTpzZXNzaW9uX2lkPTFfTVg0ME56STFNalUwTkg1LU1UWXlNemMwTlRVME5qZzBPSDVFTm5wdmVuWTNOR0YyUVVNd1JFczVhMGhwZFM5elEzSi1mZyZjcmVhdGVfdGltZT0xNjIzNzQ1NTcyJm5vbmNlPTAuMTAyMzg2NTkzODAzNTU2ODYmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTYyMzc2NzE2OSZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==";
-            CrossVonage.Current.SessionId = "1_MX40NzI1MjU0NH5-MTYyMzc0NTU0Njg0OH5ENnpvenY3NGF2QUMwREs5a0hpdS9zQ3J-fg";
+            CrossVonage.Current.UserToken = "T1==cGFydG5lcl9pZD00NzI1MjU0NCZzaWc9NGQxODRiM2M0YTg4YTNhZmVmNDBhMDg2ODdmZGY5YWU4N2NiZmZkMjpzZXNzaW9uX2lkPTFfTVg0ME56STFNalUwTkg1LU1UWXlORFl5TURReU9URTVPWDVpWVVkeWJ6RjFTRU5HTTI5RVJUQXpNM05CTTBWM1VYTi1VSDQmY3JlYXRlX3RpbWU9MTYyNDYyMDQ1OCZub25jZT0wLjE3OTc1MTgxNTUwMjEyNzgyJnJvbGU9cHVibGlzaGVyJmV4cGlyZV90aW1lPTE2MjQ2MjQwNTcmaW5pdGlhbF9sYXlvdXRfY2xhc3NfbGlzdD0=";
+            CrossVonage.Current.SessionId = "1_MX40NzI1MjU0NH5-MTYyNDYyMDQyOTE5OX5iYUdybzF1SENGM29ERTAzM3NBM0V3UXN-UH4";
             CrossVonage.Current.Error += (m) => MainPage.DisplayAlert("ERROR", m, "OK");
         }
 

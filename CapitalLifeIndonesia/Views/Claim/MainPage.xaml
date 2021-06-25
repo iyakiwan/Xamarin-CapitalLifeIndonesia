@@ -69,10 +69,10 @@
                         </Label.FormattedText>
                     </Label>
                     <Line X1="0" Y1="0" X2="500" Y2="0" Grid.Row="1" Grid.ColumnSpan="2" Stroke="#DEDEDE" StrokeDashArray="1,1" StrokeDashOffset="6" StrokeThickness="3" Margin="8,4,8,4"/>
-                    <Frame CornerRadius="10" BackgroundColor="#3300CF15" Margin="24,0,24,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="5">
-                        <Label Text="Active" FontSize="15"  TextColor="#00CF15" HorizontalOptions="Center" />
+                    <Frame CornerRadius="10" BackgroundColor="#33F59C1A" Margin="24,0,24,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="5">
+                        <Label Text="On Proggress" FontSize="15"  TextColor="#F59C1A" HorizontalOptions="Center" />
                     </Frame>
-                    <Button Text="Detail" Margin="16,8,16,8" Grid.Column="1" Grid.Row="2"/>
+                    <Button Text="Detail" Margin="16,8,16,8" Grid.Column="1" Grid.Row="2" Clicked="OnDetail"/>
                 </Grid>
             </Frame>
 
