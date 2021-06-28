@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             Title="Claim Insurance"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             IconImageSource="icon_claim.png"
              xmlns:local="clr-namespace:CapitalLifeIndonesia.Views.Claim"
              x:Class="CapitalLifeIndonesia.Views.Claim.MainPage">
     <ContentPage.Content>
-        <StackLayout Padding="30,10,30,10">
+        <StackLayout Padding="30,30,30,10">
+            <Label Text="Claim Insurance" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="0,0,0,30"/>
             <Label>
                 <Label.FormattedText>
                     <FormattedString>
@@ -72,7 +73,7 @@
                     <Frame CornerRadius="10" BackgroundColor="#33F59C1A" Margin="24,0,24,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="5">
                         <Label Text="On Proggress" FontSize="15"  TextColor="#F59C1A" HorizontalOptions="Center" />
                     </Frame>
-                    <Button Text="Detail" Margin="16,8,16,8" Grid.Column="1" Grid.Row="2" Clicked="OnDetail"/>
+                    <Button Text="Detail" Margin="16,8,16,8" Grid.Column="1" Grid.Row="2" Clicked="OnDetailProggress"/>
                 </Grid>
             </Frame>
 

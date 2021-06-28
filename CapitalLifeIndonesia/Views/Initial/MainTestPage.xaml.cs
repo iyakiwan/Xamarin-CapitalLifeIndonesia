@@ -17,6 +17,7 @@ namespace CapitalLifeIndonesia.Views.Initial
         {
             InitializeComponent();
 
+            Title = "Dashboard";
             /*if (!CrossVonage.Current.TryStartSession())
             {
                 return;

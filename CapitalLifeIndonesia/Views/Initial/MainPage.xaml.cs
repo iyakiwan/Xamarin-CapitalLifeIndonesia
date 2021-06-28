@@ -10,18 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Initial
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class VerificationPage : ContentPage
+    public partial class MainPage : TabbedPage
     {
-        public VerificationPage()
+        public MainPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-        }
-
-        private async void LabelResend_Tapped(object sender, EventArgs e)
-        {
-            Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
-            await Navigation.PushAsync(new MainPage());
+            this.Children.Add(new MainTestPage());
+            this.Children.Add(new Claim.MainPage());
+            this.Children.Add(new Policy.MainPage());
+            this.Children.Add(new Appointment.MainPage());
+            this.Children.Add(new Payment.MainPage());
         }
     }
 }

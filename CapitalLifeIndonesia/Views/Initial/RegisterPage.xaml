@@ -6,7 +6,6 @@
         <ScrollView>
             <StackLayout>
                 <Frame Padding="24" CornerRadius="0">
-                    <Label Text="Vonage" HorizontalTextAlignment="Center" FontSize="36"/>
                     <Image Source="ic_logo.png" />
                 </Frame>
                 <StackLayout Padding="30,10,30,10">
