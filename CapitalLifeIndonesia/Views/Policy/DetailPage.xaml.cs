@@ -10,16 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Policy
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : ContentPage
+    public partial class DetailPage : ContentPage
     {
-        public MainPage()
+        public DetailPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DetailPage());
+            await Navigation.PopAsync();
         }
     }
 }

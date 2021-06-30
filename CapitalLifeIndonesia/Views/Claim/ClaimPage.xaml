@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Claim.ClaimPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,10,20,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="icon_back.png" HorizontalOptions="Start" HeightRequest="30" Grid.Column="0" BackgroundColor="Transparent" Clicked="OnClickBack"/>
+                <Label Text="Claim Insurance" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,10,0,10" Grid.ColumnSpan="2" Grid.Row="0" />
+            </Grid>
+            <ScrollView>
+                <StackLayout>
+                    <Label Margin="0,25,0,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Claim Online" TextColor="#121212" FontAttributes="Bold"  FontSize="16"/>
+                                    <Span Text=" Capital Proteksi Link" TextColor="#932BF5" FontAttributes="Bold"  FontSize="16"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Text="We help make your claim process easy and smooth." FontSize="14" TextColor="#AAAAAA"/>
+                    <Frame IsClippedToBounds="True" HasShadow="True" Padding="16" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,16" >
+                        <StackLayout>
+                            <Label Text="Complete The Data Below :" FontSize="14" TextColor="#932BF5"/>
+                            <Label Text="Type Solution" FontSize="16" TextColor="#121212" FontAttributes="Bold"/>
+                            <StackLayout Orientation="Horizontal" RadioButtonGroup.GroupName="type">
+                                <RadioButton Content="Individu" />
+                                <RadioButton Content="Group" />
+                            </StackLayout>
+                            <Label Text="First Name" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter First Name" BackgroundColor="#F7F7F7"/>
+                            <Label Text="Last Name" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter First Name" BackgroundColor="#F7F7F7"/>
+                            <Label Text="Product Name" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter Product Name" BackgroundColor="#F7F7F7"/>
+                            <Label Text="No. Policy" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter No. Policy" BackgroundColor="#F7F7F7"/>
+                            <Label Text="Date of Birth" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <DatePicker x:Name="startDatePicker" Format="D" />
+                            <Label Text="Address" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter Address" BackgroundColor="#F7F7F7" Keyboard="Text"/>
+                            <Label Text="Phone" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter Phone" BackgroundColor="#F7F7F7" Keyboard="Telephone"/>
+                            <Label Text="Email" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter Email" BackgroundColor="#F7F7F7" Keyboard="Email"/>
+                            <Label Text="Cause of Claim" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Entry Placeholder="Enter Cause of Claim" BackgroundColor="#F7F7F7" Keyboard="Email" IsEnabled="False"/>
+                            <Button Text="Submit" Margin="0,30,0,0" Clicked="OnSubmit" x:Name="Submit"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

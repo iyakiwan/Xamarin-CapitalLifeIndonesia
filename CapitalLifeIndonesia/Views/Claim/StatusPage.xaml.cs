@@ -7,19 +7,20 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace CapitalLifeIndonesia.Views.Policy
+namespace CapitalLifeIndonesia.Views.Claim
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : ContentPage
+    public partial class StatusPage : ContentPage
     {
-        public MainPage()
+        public StatusPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void OnBack(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DetailPage());
+            await Navigation.PushAsync(new Initial.MainPage());
         }
     }
 }
