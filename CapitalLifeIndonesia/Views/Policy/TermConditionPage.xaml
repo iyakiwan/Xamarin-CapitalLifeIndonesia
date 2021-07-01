@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Policy.TermConditionPage"
+             Title="Term Condition">
+    <ContentPage.Content>
+        <StackLayout Padding="20,10,20,10">
+            <Label Text="Product Terms" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,20,0,0"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="Offers investment benefits and life protection with optimal returns during the insurance / investment contract period." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="The investment / insurance period is 1 (one) year and can be extended." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="Currency Investment: Rupiah." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="How to pay premiums: at once (initial insurance contract)." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="The Insured's and Policyholder's Minimum Entry Age is 18 years, the Insured's Maximum Age is 69 years old and the Policy Holder is 70 years old." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="There is cash value." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+
+            <Label Text="Underwriting Terms" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,20,0,0"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="The risk selection for this product is Free Cover." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="Required to fill out the life insurance application form (SPAJ)." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="Without health check." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

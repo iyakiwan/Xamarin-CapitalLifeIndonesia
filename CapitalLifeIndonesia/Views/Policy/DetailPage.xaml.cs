@@ -10,12 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Policy
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DetailPage : ContentPage
+    public partial class DetailPage : TabbedPage
     {
         public DetailPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
+            //NavigationPage.SetHasNavigationBar(this, false); 
+            this.Children.Add(new AboutPage());
+            this.Children.Add(new BenefitFeaturePage());
+            this.Children.Add(new TermConditionPage());
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)

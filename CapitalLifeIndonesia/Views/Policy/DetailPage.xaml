@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CapitalLifeIndonesia.Views.Policy.DetailPage">
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="CapitalLifeIndonesia.Views.Policy.DetailPage"
+            Title="Capital Proteksi Plus"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            BarBackgroundColor="#932BF5"
+            BarTextColor="White"
+            android:TabbedPage.BarItemColor="#66FFFFFF"
+            android:TabbedPage.BarSelectedItemColor="White">
+
+    <!--
     <ContentPage.Content>
         <StackLayout Padding="20,10,20,10">
             <Grid>
@@ -17,4 +25,5 @@
             </Grid>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+    -->
+</TabbedPage>

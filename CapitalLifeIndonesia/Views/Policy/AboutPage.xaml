@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Policy.AboutPage"
+             Title="About Product">
+    <ContentPage.Content>
+        <StackLayout Padding="20,10,20,10">
+            <Label Text="Description" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,20,0,0"/>
+            <Label Text="With a modern and professional investment management concept, Capital Proteksi Plus is not just an ordinary savings or investment insurance instrument." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            <Label Text="The Value of Coverage" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,20,0,0"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="Sum assured = 150% of the Premium at one time and does not change during the contract period." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2022;" FontSize="14" TextColor="#AA47F4"  Margin="0,0,0,0"/>
+                <Label Text="The maximum total accumulated sum insured is IDR 2 billion." FontSize="14" TextColor="#121212"  Margin="0,0,0,0"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
