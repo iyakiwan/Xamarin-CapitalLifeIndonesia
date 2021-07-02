@@ -5,10 +5,40 @@
              IconImageSource="icon_appoinment.png"
              Title="Appointent">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Appointent Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <StackLayout Padding="30"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                         AbsoluteLayout.LayoutFlags="SizeProportional">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="icon_notifications.png" HorizontalOptions="End" HeightRequest="30" Grid.Column="1" BackgroundColor="Transparent" />
+                    <Label Text="Policy" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,10,0,10" Grid.ColumnSpan="2" Grid.Row="0" />
+                </Grid>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Image Source="appointment_empty.png" Margin="50,0,50,0"/>
+                    <Label Text="No Appointment" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Press button + to create new appointment" FontSize="16" TextColor="#AAAAAA" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+            <ImageButton
+                AbsoluteLayout.LayoutBounds="0.95,0.98,60,60"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="#932BF5"
+                CornerRadius="30"
+                HeightRequest="60"
+                Padding="10"
+                x:Name="btnAdd"
+                Source="icon_add.png"
+                Clicked="btnAdd_Clicked"
+                WidthRequest="80" />
+        </AbsoluteLayout>
+        
     </ContentPage.Content>
 </ContentPage>
