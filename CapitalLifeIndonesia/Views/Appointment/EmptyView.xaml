@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Appointment.EmptyView">
+  <ContentView.Content>
+        <StackLayout>
+            <Image Source="appointment_empty.png" Margin="50,0,50,0"/>
+            <Label Text="No Appointment" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Text="Press button + to create new appointment" FontSize="16" TextColor="#AAAAAA" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

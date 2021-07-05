@@ -15,11 +15,18 @@ namespace CapitalLifeIndonesia.Views.Appointment
         public MainPage()
         {
             InitializeComponent();
+            ListView.SetValue(IsVisibleProperty, false);
         }
 
         private async void btnAdd_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AddPage());
+        }
+
+        private void TapEmpty_Tapped(object sender, EventArgs e)
+        {
+            EmptyView.SetValue(IsVisibleProperty, false);
+            ListView.SetValue(IsVisibleProperty, true);
         }
     }
 }

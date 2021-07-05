@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Appointment.ListView">
+  <ContentView.Content>
+      <StackLayout>
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="0" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
+                <Grid Padding="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="0">
+                        <Image Source="icon_appoinment.png" />
+                        <Label Text="Insurance Claim" FontSize="20"  TextColor="#121212" FontAttributes="Bold"/>
+                    </StackLayout>
+                    
+                    <Line X1="0" Y1="0" X2="500" Y2="0" Grid.Row="1" Grid.ColumnSpan="2" Stroke="#DEDEDE" StrokeDashArray="1,1" StrokeDashOffset="6" StrokeThickness="3" Margin="8,4,8,4"/>
+
+                    <StackLayout Grid.Column="0" Grid.Row="2">
+                        <Label Text="Date" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="10,0,0,0"/>
+                        <Frame CornerRadius="10" BackgroundColor="#F7F7F7" Margin="10,0,0,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="12/04/2020" FontSize="15"  TextColor="#121212" HorizontalOptions="Start"/>
+                                <Image Source="icon_appoinment.png" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="Time" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="10,0,0,0"/>
+                        <Frame CornerRadius="10" BackgroundColor="#F7F7F7" Margin="10,0,0,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="12:20 PM" FontSize="15"  TextColor="#121212" HorizontalOptions="Start"/>
+                                <Image Source="time_black.png" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <Button
+                        Margin="50,10,50,5"
+                        Text="Waiting Confirmation"
+                        BorderWidth="2"
+                        BorderRadius="10"
+                        BorderColor="#932BF5"
+                        HeightRequest="50"
+                        TextColor="#932BF5"
+                        BackgroundColor="#ffffff"
+                        HorizontalOptions = "FillAndExpand"
+                        VerticalOptions = "Center"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="3"/>
+                </Grid>
+            </Frame>
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="0" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
+                <Grid Padding="8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="0">
+                        <Image Source="icon_appoinment.png" />
+                        <Label Text="Explanation of The Policy" FontSize="20"  TextColor="#121212" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                    <Line X1="0" Y1="0" X2="500" Y2="0" Grid.Row="1" Grid.ColumnSpan="2" Stroke="#DEDEDE" StrokeDashArray="1,1" StrokeDashOffset="6" StrokeThickness="3" Margin="8,4,8,4"/>
+
+                    <StackLayout Grid.Column="0" Grid.Row="2">
+                        <Label Text="Date" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="10,0,0,0"/>
+                        <Frame CornerRadius="10" BackgroundColor="#F7F7F7" Margin="10,0,0,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="12/04/2020" FontSize="15"  TextColor="#121212" HorizontalOptions="Start"/>
+                                <Image Source="icon_appoinment.png" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Label Text="Time" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="10,0,0,0"/>
+                        <Frame CornerRadius="10" BackgroundColor="#F7F7F7" Margin="10,0,0,0" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="12:20 PM" FontSize="15"  TextColor="#121212" HorizontalOptions="Start"/>
+                                <Image Source="time_black.png" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <Button
+                        Margin="50,10,50,5"
+                        Text="Join Meeting"
+                        BorderRadius="10"
+                        HeightRequest="50"
+                        BackgroundColor="#932BF5"
+                        HorizontalOptions = "FillAndExpand"
+                        VerticalOptions = "Center"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="3"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

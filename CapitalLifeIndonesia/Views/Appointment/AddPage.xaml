@@ -34,7 +34,7 @@
                     <Label Text="Time" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0" Grid.Column="1" Grid.Row="0" />
                     <TimePicker x:Name="TImePicker" Format="T" Grid.Column="1" Grid.Row="1" />
                 </Grid>
-                <Button Text="Create" Margin="0,30,0,0"  x:Name="Create"/>
+                <Button Text="Create" Margin="0,30,0,0"  x:Name="Create" Clicked="Create_Clicked"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

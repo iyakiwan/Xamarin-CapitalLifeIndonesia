@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Appointment.StatusPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Image Source="place_success.png" Margin="30,0,30,10"/>
+            <Label Text="Success" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="You have successfuly created Appointment" FontSize="16" TextColor="#AAAAAA" HorizontalOptions="Center" />
+            <Button Text="Back" Margin="125,50,125,0" Clicked="OnBack" x:Name="Submit"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

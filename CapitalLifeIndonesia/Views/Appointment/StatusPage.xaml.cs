@@ -10,22 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Appointment
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddPage : ContentPage
+    public partial class StatusPage : ContentPage
     {
-        public AddPage()
+        public StatusPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void OnClickBack(object sender, EventArgs e)
+        private async void OnBack(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
-        }
-
-        private async void Create_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new StatusPage());
+            await Navigation.PushAsync(new Initial.MainPage());
         }
     }
 }
