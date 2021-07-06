@@ -5,10 +5,66 @@
              IconImageSource="icon_payment.png"
              Title="Payment">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Payment Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="30,30,30,10">
+            <Label Text="Payment" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="0,0,0,30"/>
+
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="0" CornerRadius="5" BackgroundColor="White" Margin="0,8,0,0">
+                <Grid Padding="24,16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame CornerRadius="10" BackgroundColor="#33F59C1A" Margin="0,0,24,0" Grid.Column="0" Grid.Row="0" VerticalOptions="Center" Padding="5">
+                        <Label Text="On Proggress" FontSize="15"  TextColor="#F59C1A" HorizontalOptions="Center" />
+                    </Frame>
+
+                    <Label Text="Program A" FontSize="18"  TextColor="#121212" FontAttributes="Bold" Grid.Column="0" Grid.Row="1"/>
+
+                    <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="2">
+                        <Label Text="Billing date" FontSize="17" TextColor="#ACACAC"/>
+                        <Label Text="-" FontSize="17" TextColor="#99121212" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="3">
+                        <Label Text="Payment date" FontSize="17" TextColor="#ACACAC"/>
+                        <Label Text="-" FontSize="17" TextColor="#99121212" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="0" CornerRadius="5" BackgroundColor="White" Margin="0,8,0,0">
+                <Grid Padding="24,16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame CornerRadius="10" BackgroundColor="#3300CF15" Margin="0,0,24,0" Grid.Column="0" Grid.Row="0" VerticalOptions="Center" Padding="5">
+                        <Label Text="Paid" FontSize="15"  TextColor="#00CF15" HorizontalOptions="Center" />
+                    </Frame>
+
+                    <Label Text="Program A" FontSize="18"  TextColor="#121212" FontAttributes="Bold" Grid.Column="0" Grid.Row="1"/>
+
+                    <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="2">
+                        <Label Text="Billing date" FontSize="17" TextColor="#ACACAC"/>
+                        <Label Text="25-Aug-2020" FontSize="17" TextColor="#99121212" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="3">
+                        <Label Text="Payment date" FontSize="17" TextColor="#ACACAC"/>
+                        <Label Text="20-Aug-2020" FontSize="17" TextColor="#99121212" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

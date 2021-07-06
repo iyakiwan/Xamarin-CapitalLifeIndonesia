@@ -16,5 +16,10 @@ namespace CapitalLifeIndonesia.Views.Appointment
         {
             InitializeComponent();
         }
+
+        private async void ButtonJoin_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Claim.VideoCallPage());
+        }
     }
 }

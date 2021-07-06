@@ -102,7 +102,9 @@
                         HorizontalOptions = "FillAndExpand"
                         VerticalOptions = "Center"
                         Grid.ColumnSpan="2"
-                        Grid.Row="3"/>
+                        Grid.Row="3"
+                        x:Name="ButtonJoin"
+                        Clicked="ButtonJoin_Clicked"/>
                 </Grid>
             </Frame>
         </StackLayout>
