@@ -28,5 +28,10 @@ namespace CapitalLifeIndonesia.Views.Appointment
             EmptyView.SetValue(IsVisibleProperty, false);
             ListView.SetValue(IsVisibleProperty, true);
         }
+
+        private async void Notification_Appointment_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Notification.MainPage());
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace CapitalLifeIndonesia.Views.Policy
+namespace CapitalLifeIndonesia.Views.Notification
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
@@ -15,16 +15,17 @@ namespace CapitalLifeIndonesia.Views.Policy
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void OnClickBack(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DetailPage());
+            await Navigation.PopAsync();
         }
 
-        private async void Notification_Policy_Clicked(object sender, EventArgs e)
+        private async void ButtonJoinNotif_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Notification.MainPage());
+            await Navigation.PushAsync(new Claim.VideoCallPage());
         }
     }
 }
