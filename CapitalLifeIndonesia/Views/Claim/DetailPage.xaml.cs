@@ -36,15 +36,15 @@ namespace CapitalLifeIndonesia.Views.Claim
         }
 
 
-        private async void OnVideoCall(object sender, EventArgs e)
+        private async void OnExecute(object sender, EventArgs e)
         {
             if (status)
             {
-                if (!CrossVonage.Current.TryStartSession())
+                /*if (!CrossVonage.Current.TryStartSession())
                 {
                     return;
-                }
-                await Navigation.PushAsync(new VideoCallPage());
+                }*/
+                await Navigation.PushAsync(new SchedulePage());
             } else
             {
                 await Navigation.PushAsync(new ClaimPage());

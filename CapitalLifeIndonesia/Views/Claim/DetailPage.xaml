@@ -50,7 +50,7 @@
                                Text="1. Prepare a completed health insurance claim form along with supporting documents, then send it to the Cigna Indonesia office or upload it via the website.
                                &#10;2. Cigna will receive and check the completeness of the forms and supporting documents.
                                &#10;3. Customer will receive a confirmation via SMS that Cigna has received the claim form and documents."/>
-                        <Button Text="Claim" Margin="0,40,0,0" Grid.Column="1" Grid.Row="2" Clicked="OnVideoCall" x:Name="Submit"/>
+                        <Button Text="Claim" Margin="0,40,0,0" Grid.Column="1" Grid.Row="2" Clicked="OnExecute" x:Name="Submit"/>
                     </StackLayout>
                 </Grid>
             </Frame>
