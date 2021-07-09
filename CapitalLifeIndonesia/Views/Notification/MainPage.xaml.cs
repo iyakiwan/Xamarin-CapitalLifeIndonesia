@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Vonage;
 using Xamarin.Forms.Xaml;
 
 namespace CapitalLifeIndonesia.Views.Notification
@@ -25,6 +26,10 @@ namespace CapitalLifeIndonesia.Views.Notification
 
         private async void ButtonJoinNotif_Clicked(object sender, EventArgs e)
         {
+            if (!CrossVonage.Current.TryStartSession())
+            {
+                return;
+            }
             await Navigation.PushAsync(new Claim.VideoCallPage());
         }
     }

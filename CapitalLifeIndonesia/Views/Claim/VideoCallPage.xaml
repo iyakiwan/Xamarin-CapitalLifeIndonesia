@@ -10,56 +10,111 @@
                                      AbsoluteLayout.LayoutBounds="0,0,1,1" 
                                      AbsoluteLayout.LayoutFlags="SizeProportional"/>
 
-            <vonage:VonagePublisherView AbsoluteLayout.LayoutBounds="0.95, 0.8, 100,200"
+            <vonage:VonagePublisherView AbsoluteLayout.LayoutBounds="0.95, 0.05, 100,200"
                            AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
+            <Frame AbsoluteLayout.LayoutBounds="0.5,0.97,350,90"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   IsClippedToBounds="True" HasShadow="True" Padding="0" CornerRadius="50" BackgroundColor="#932BF5" Margin="0,16,0,0">
+                <StackLayout VerticalOptions="End">
+                    <Label Text="Inez Bryant" HorizontalTextAlignment="Center" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF"/>
+                    <Label Text="01:29" HorizontalTextAlignment="Center" FontSize="12" TextColor="#FFFFFF" Margin="0,0,0,10"/>
+                </StackLayout>
+            </Frame>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.3,0.7,50,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <ImageButton
+                    BackgroundColor="#70CCCCCC"
+                    Clicked="OnShareScreen"
+                    x:Name="BtnShareScreen"
+                    CornerRadius="4"
+                    HeightRequest="50"
+                    Padding="10"
+                    Source="video_screen.png"/>
+                <Label Text="Share Screen" HorizontalTextAlignment="Center" FontSize="13"/>
+            </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.7,50,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <ImageButton
+                    BackgroundColor="#70CCCCCC"
+                    Clicked="OnCamera"
+                    x:Name="btnMuteCamera"
+                    CornerRadius="4"
+                    HeightRequest="50"
+                    Padding="10"
+                    Source="videocam_on.png"/>
+                <Label Text="Video" HorizontalTextAlignment="Center" FontSize="13"/>
+            </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.7,0.7,50,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <ImageButton
+                    BackgroundColor="#70CCCCCC"
+                    x:Name="btnMute"
+                    Clicked="OnVoice"
+                    CornerRadius="4"
+                    HeightRequest="50"
+                    Padding="10"
+                    Source="mic_on.png"/>
+                <Label Text="Mic" HorizontalTextAlignment="Center" FontSize="13"/>
+            </StackLayout>
+
             <ImageButton
-                AbsoluteLayout.LayoutBounds="0.5,0.85,80,80"
+                AbsoluteLayout.LayoutBounds="0.15,0.95,50,50"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="red"
+                BackgroundColor="#22000000"
+                CornerRadius="4"
+                HeightRequest="60"
+                Padding="10"
+                x:Name="btnChat"
+                Source="video_chat.png"
+                WidthRequest="80" />
+            
+            <ImageButton
+                AbsoluteLayout.LayoutBounds="0.5,0.85,60,60"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="#932BF5"
                 Clicked="OnEndCall"
-                CornerRadius="40"
-                HeightRequest="80"
+                CornerRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
                 Padding="10"
                 x:Name="btnEndCall"
                 Source="call_end.png"
-                WidthRequest="80" />
+                 />
 
             <ImageButton
-                AbsoluteLayout.LayoutBounds="0.5,0.98,60,60"
+                AbsoluteLayout.LayoutBounds="0.85,0.95,50,50"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="Blue"
-                Clicked="OnCamera"
-                CornerRadius="30"
-                HeightRequest="60"
-                Padding="10"
-                x:Name="btnMuteCamera"
-                Source="videocam_on.png"
-                WidthRequest="80" />
-
-            <ImageButton
-                AbsoluteLayout.LayoutBounds="0.25,0.98,60,60"
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="Blue"
+                BackgroundColor="#22000000"
                 Clicked="OnSwapCamera"
-                CornerRadius="30"
+                CornerRadius="4"
                 HeightRequest="60"
                 Padding="10"
                 x:Name="btnSwipeCamera"
                 Source="flip_camera_android.png"
                 WidthRequest="80" />
 
+            
+
+            <!--
             <ImageButton
                 AbsoluteLayout.LayoutBounds="0.75,0.98,60,60"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
                 BackgroundColor="Blue"
-                Clicked="OnVoice"
+                
                 CornerRadius="30"
                 HeightRequest="60"
                 Padding="10"
-                x:Name="btnMute"
+                
                 Source="mic_on.png"
                 WidthRequest="80" />
+            -->
         </AbsoluteLayout>
 
     </ContentPage.Content>

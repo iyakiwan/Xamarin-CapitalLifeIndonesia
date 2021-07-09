@@ -40,10 +40,6 @@ namespace CapitalLifeIndonesia.Views.Claim
         {
             if (status)
             {
-                /*if (!CrossVonage.Current.TryStartSession())
-                {
-                    return;
-                }*/
                 await Navigation.PushAsync(new SchedulePage());
             } else
             {

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Vonage;
 using Xamarin.Forms.Xaml;
 
 namespace CapitalLifeIndonesia.Views.Appointment
@@ -19,6 +20,10 @@ namespace CapitalLifeIndonesia.Views.Appointment
 
         private async void ButtonJoin_Clicked(object sender, EventArgs e)
         {
+            if (!CrossVonage.Current.TryStartSession())
+            {
+                return;
+            }
             await Navigation.PushAsync(new Claim.VideoCallPage());
         }
     }
