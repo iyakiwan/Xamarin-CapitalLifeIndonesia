@@ -16,7 +16,7 @@ namespace CapitalLifeIndonesia.Views.Initial
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            this.Children.Add(new MainTestPage());
+            this.Children.Add(new Main.MainPage());
             this.Children.Add(new Claim.MainPage());
             this.Children.Add(new Policy.MainPage());
             this.Children.Add(new Appointment.MainPage());
