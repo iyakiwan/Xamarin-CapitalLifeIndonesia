@@ -2,18 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CapitalLifeIndonesia.Views.Main.MasterPage"
-             Padding="0,40,0,0"
+             Padding="0,0,0,0"
              Icon="icon.png"
              Title="Personal Organiser">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
+            <Frame CornerRadius="0">
+                <Image Source="ic_logo.png" />
+            </Frame>
+            <StackLayout Orientation="Horizontal" Padding="16,8">
+                <Image Source="image_profile.png" HeightRequest="64" WidthRequest="64"/>
+                <StackLayout Padding="8,0">
+                    <Label Text="Gopichand Sana" FontAttributes="Bold" FontSize="20" TextColor="#121212"/>
+                    <Label Text="2735372992" FontSize="15" TextColor="#AAAAAA"/>
+                </StackLayout>
+                
+            </StackLayout>
             <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="8">
+                                <Image Source="{Binding IconSource}" Aspect="AspectFit" WidthRequest="48" HeightRequest="48" VerticalOptions="CenterAndExpand"  />
+                                <Label Text="{Binding Title}" VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <StackLayout Orientation="Horizontal" Padding="8" Margin="8,0,0,8" x:Name="Logout">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Logout_Tapped"/>
+                </StackLayout.GestureRecognizers>
+                <Image Source="icon_logout.png" Aspect="AspectFit" WidthRequest="24" HeightRequest="24" VerticalOptions="CenterAndExpand"  />
+                <Label Text="Logout" VerticalOptions="CenterAndExpand" Margin="8,0" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -20,16 +20,21 @@ namespace CapitalLifeIndonesia.Views.Main
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Dashboard",
-                IconSource = "contacts.png",
+                IconSource = "icon_dashboard.png",
                 TargetType = typeof(DashboardPage)
             });
             masterPageItems.Add(new MasterPageItem
             {
-                Title = "Customer",
-                IconSource = "todo.png",
+                Title = "Customer Support",
+                IconSource = "icon_help.png",
                 TargetType = typeof(CustomerPage)
             });
             listView.ItemsSource = masterPageItems;
+        }
+
+        private async void Logout_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Initial.LoginPage());
         }
     }
 }
