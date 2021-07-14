@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapitalLifeIndonesia.Views.Main.ChatPage"
+             Title="Chat">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="image_profile.png" WidthRequest="48" HeightRequest="48"/>
+                <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="#932BF5" Margin="16,0,0,0">
+                    <Label Text="Dear Sir / Madam, Thank you for using the Live Chat service capital life insurance" TextColor="White"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="image_profile.png" WidthRequest="48" HeightRequest="48"/>
+                <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="#932BF5" Margin="16,0,0,0">
+                    <Label Text="How can we help ?" TextColor="White"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="#FFA68D" Margin="16,0,0,0" HorizontalOptions="EndAndExpand">
+                    <Label Text="How can we help ?" TextColor="White"/>
+                </Frame>
+            </StackLayout>
+
+            <CarouselView x:Name="listViewChat" VerticalOptions="EndAndExpand" ItemsSource="{Binding listViewChat}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                                    <Label Text="{Binding Chat}" TextColor="#932BF5"/>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                <Entry Placeholder="Type your message here" BackgroundColor="#F7F7F7" TextColor="#AAAAAA" VerticalOptions="EndAndExpand" WidthRequest="300"/>
+                <Image Source="icon_send.png" WidthRequest="36" HeightRequest="36"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

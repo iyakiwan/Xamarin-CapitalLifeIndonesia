@@ -10,13 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Main
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CustomerPage : TabbedPage
+    public partial class FaqPage : ContentPage
     {
-        public CustomerPage()
+        public FaqPage()
         {
             InitializeComponent();
-            this.Children.Add(new ChatPage());
-            this.Children.Add(new FaqPage());
         }
     }
 }
