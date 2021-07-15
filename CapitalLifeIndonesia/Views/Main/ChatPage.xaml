@@ -23,20 +23,18 @@
                 </Frame>
             </StackLayout>
 
-            <CarouselView x:Name="listViewChat" VerticalOptions="EndAndExpand" ItemsSource="{Binding listViewChat}">
-                <CarouselView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
-                                <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
-                                    <Label Text="{Binding Chat}" TextColor="#932BF5"/>
-                                </Frame>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </CarouselView.ItemTemplate>
-            </CarouselView>
             <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                <Frame IsClippedToBounds="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                    <Label Text="failed to claim" TextColor="#932BF5"/>
+                </Frame>
+                <Frame IsClippedToBounds="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                    <Label Text="How to Payment" TextColor="#932BF5"/>
+                </Frame>
+                <Frame IsClippedToBounds="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                    <Label Text="How to cancel p..." TextColor="#932BF5"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="End">
                 <Entry Placeholder="Type your message here" BackgroundColor="#F7F7F7" TextColor="#AAAAAA" VerticalOptions="EndAndExpand" WidthRequest="300"/>
                 <Image Source="icon_send.png" WidthRequest="36" HeightRequest="36"/>
             </StackLayout>

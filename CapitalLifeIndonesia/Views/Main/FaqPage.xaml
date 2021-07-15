@@ -4,10 +4,42 @@
              x:Class="CapitalLifeIndonesia.Views.Main.FaqPage"
              Title="FAQ">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Faq Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="24">
+            <SearchBar Placeholder="Search Question"
+                       BackgroundColor="#F7F7F7"
+                       TextColor="Black"/>
+            <Label Text="Top Questions Topics" TextColor="#121212" FontAttributes="Bold" FontSize="Large" Margin="0,16"/>
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,8">
+                <Frame IsClippedToBounds="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                    <Label Text="failed to claim" TextColor="#932BF5"/>
+                </Frame>
+                <Frame IsClippedToBounds="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                    <Label Text="Payment" TextColor="#932BF5"/>
+                </Frame>
+                <Frame IsClippedToBounds="True" Padding="6" CornerRadius="5" BackgroundColor="White" BorderColor="#932BF5">
+                    <Label Text="Submission to claim" TextColor="#932BF5"/>
+                </Frame>
+            </StackLayout>
+            <Line X1="0" Y1="0" X2="500" Y2="0" Grid.Row="1" Grid.ColumnSpan="2" Stroke="#DEDEDE" StrokeDashArray="1,1" StrokeThickness="0" Margin="8,4"/>
+            <Label Text="General" TextColor="#932BF5" FontAttributes="Bold" FontSize="20"/>
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="16" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="What should I do if my policy is lost ?" TextColor="#121212"/>
+                    <Image Source="icon_next.png" HorizontalOptions="EndAndExpand" HeightRequest="24" WidthRequest="24"/>
+                </StackLayout>
+            </Frame>
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="16" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="What should I do to keep my Policy active?" TextColor="#121212"/>
+                    <Image Source="icon_next.png" HorizontalOptions="EndAndExpand" HeightRequest="24" WidthRequest="24"/>
+                </StackLayout>
+            </Frame>
+            <Frame IsClippedToBounds="True" HasShadow="True" Padding="16" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="How do I make a Unit Link Transaction?" TextColor="#121212"/>
+                    <Image Source="icon_next.png" HorizontalOptions="EndAndExpand" HeightRequest="24" WidthRequest="24"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
