@@ -5,14 +5,22 @@
              xmlns:pages="clr-namespace:CapitalLifeIndonesia.Views.Main"
             IconImageSource="icon_home.png"
             Title="Home">
-  <FlyoutPage.Flyout>
-    <pages:MasterPage x:Name="FlyoutPage" />
-  </FlyoutPage.Flyout>
-  <FlyoutPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <pages:DashboardPage />
-      </x:Arguments>
-    </NavigationPage>
-  </FlyoutPage.Detail>
+    <FlyoutPage.ToolbarItems>
+        <ToolbarItem Text="Notification"
+                     IconImageSource="icon_notifications.png"
+                     Order="Primary"
+                     x:Name="btnNotif"
+                     Clicked="btnNotif_Clicked"
+                     Priority="0" />
+    </FlyoutPage.ToolbarItems>
+    <FlyoutPage.Flyout>
+        <pages:MasterPage x:Name="FlyoutPage" />
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:DashboardPage />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
 </FlyoutPage>

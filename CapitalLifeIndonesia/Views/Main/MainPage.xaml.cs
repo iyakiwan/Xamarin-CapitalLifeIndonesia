@@ -28,5 +28,10 @@ namespace CapitalLifeIndonesia.Views.Main
                 IsPresented = false;
             }
         }
+
+        private async void btnNotif_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Notification.MainPage());
+        }
     }
 }
