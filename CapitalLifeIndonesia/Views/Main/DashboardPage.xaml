@@ -6,81 +6,104 @@
              IconImageSource="icon_dashboard.png">
     <ContentPage.Content>
         <StackLayout>
-            <Frame Padding="24" CornerRadius="0" BackgroundColor="#DD932BF5" HeightRequest="200">
-                <StackLayout>
-                    <Image Source="image_profile.png" HeightRequest="88" WidthRequest="88"/>
-                    <Label Text="Suhaib Al Minhas" HorizontalTextAlignment="Center" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF"/>
-                    <Label Text="id: 217002662" HorizontalTextAlignment="Center" FontSize="12" TextColor="#FFFFFF"/>
-                </StackLayout>
-            </Frame>
-            <StackLayout Padding="24,16">
-                <Label Text="My Agent" TextColor="#121212" FontAttributes="Bold" FontSize="Large"/>
-                <Frame IsClippedToBounds="True" HasShadow="True" Padding="8" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
-                    <Grid Padding="8">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Frame Padding="24" CornerRadius="0" BackgroundColor="#DD932BF5" HeightRequest="200" Grid.Column="0" Grid.Row="0">
+                    <StackLayout>
+                        <Image Source="image_profile.png" HeightRequest="88" WidthRequest="88"/>
+                        <Label Text="Suhaib Al Minhas" HorizontalTextAlignment="Center" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF"/>
+                        <Label Text="id: 217002662" HorizontalTextAlignment="Center" FontSize="12" TextColor="#FFFFFF"/>
+                    </StackLayout>
+                </Frame>
 
-                        <StackLayout Orientation="Horizontal" Grid.ColumnSpan="4" Grid.Row="0" Padding="16,0">
-                            <Image Source="image_profile.png" HeightRequest="48" WidthRequest="48"/>
-                            <StackLayout Padding="8,0">
-                                <Label Text="Gopichand Sana" FontAttributes="Bold" FontSize="16" TextColor="#121212"/>
-                                <Label Text="2735372992" FontSize="12" TextColor="#AAAAAA"/>
+                <StackLayout Padding="24,16" Grid.Column="0" Grid.Row="1">
+                    <Label Text="My Agent" TextColor="#121212" FontAttributes="Bold" FontSize="Large" Margin="0,90,0,0"/>
+                    <Frame IsClippedToBounds="True" HasShadow="True" Padding="8" CornerRadius="5" BackgroundColor="White" Margin="0,16,0,0">
+                        <Grid Padding="8">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Orientation="Horizontal" Grid.ColumnSpan="4" Grid.Row="0" Padding="16,0">
+                                <Image Source="image_profile.png" HeightRequest="48" WidthRequest="48"/>
+                                <StackLayout Padding="8,0">
+                                    <Label Text="Gopichand Sana" FontAttributes="Bold" FontSize="16" TextColor="#121212"/>
+                                    <Label Text="2735372992" FontSize="12" TextColor="#AAAAAA"/>
+                                </StackLayout>
                             </StackLayout>
-                        </StackLayout>
-                        <Line X1="0" Y1="0" X2="500" Y2="0" Grid.Row="1" Grid.ColumnSpan="4" Stroke="#DEDEDE" StrokeDashArray="1,1" StrokeDashOffset="6" StrokeThickness="3" Margin="8,12"/>
-                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="8,0">
-                            <ImageButton
+                            <Line X1="0" Y1="0" X2="500" Y2="0" Grid.Row="1" Grid.ColumnSpan="4" Stroke="#DEDEDE" StrokeDashArray="1,1" StrokeDashOffset="6" StrokeThickness="3" Margin="8,12"/>
+                            <StackLayout Grid.Column="0" Grid.Row="2" Padding="8,0">
+                                <ImageButton
                                 HorizontalOptions="CenterAndExpand"
                                 BackgroundColor="#CA4992"
                                 CornerRadius="4"
                                 HeightRequest="50"
                                 Padding="10"
                                 Source="dashboard_camera.png"/>
-                            <Label Text="Meeting" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
-                        </StackLayout>
-                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="8,0">
-                            <ImageButton
+                                <Label Text="Meeting" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Grid.Row="2" Padding="8,0">
+                                <ImageButton
                                 HorizontalOptions="CenterAndExpand"
                                 BackgroundColor="#7349CA"
                                 CornerRadius="4"
                                 HeightRequest="50"
                                 Padding="10"
                                 Source="dashboard_call.png"/>
-                            <Label Text="Call" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
-                        </StackLayout>
-                        <StackLayout Grid.Column="2" Grid.Row="2" Padding="8,0">
-                            <ImageButton
+                                <Label Text="Call" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" Grid.Row="2" Padding="8,0">
+                                <ImageButton
                                 HorizontalOptions="CenterAndExpand"
                                 BackgroundColor="#4970CA"
                                 CornerRadius="4"
                                 HeightRequest="50"
                                 Padding="10"
                                 Source="dashboard_message.png"/>
-                            <Label Text="Message" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
-                        </StackLayout>
-                        <StackLayout Grid.Column="3" Grid.Row="2" Padding="8,0">
-                            <ImageButton
+                                <Label Text="Message" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="3" Grid.Row="2" Padding="8,0">
+                                <ImageButton
                                 HorizontalOptions="CenterAndExpand"
                                 BackgroundColor="#49CA5B"
                                 CornerRadius="4"
                                 HeightRequest="50"
                                 Padding="10"
                                 Source="dashboard_icon.png"/>
-                            <Label Text="WA" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
+                                <Label Text="WA" HorizontalTextAlignment="Center" FontSize="13" TextColor="#121212"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+                <Frame IsClippedToBounds="True" HasShadow="True" Padding="16" Margin="24,24,24,100" CornerRadius="5" BackgroundColor="White" Grid.Column="0" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">
+                    <StackLayout>
+                        <Label Text="Insurance Status" TextColor="#932BF5" FontAttributes="Bold" FontSize="18"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="appointment_empty.png" HeightRequest="100"/>
+                            <StackLayout Margin="8,0,0,0">
+                                <Label Text="Program Insurance" TextColor="#ACACAC" FontSize="16"/>
+                                <Label Text="Capital Proteksi Plus" TextColor="#932BF5" FontAttributes="Bold" FontSize="16"/>
+                                <Button Text="Read More" Margin="0,0,16,0" x:Name="ReadMore" Clicked="ReadMore_Clicked"/>
+                            </StackLayout>
                         </StackLayout>
-                    </Grid>
+                    </StackLayout>
                 </Frame>
-            </StackLayout>
-            
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
