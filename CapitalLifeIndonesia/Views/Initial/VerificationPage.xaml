@@ -4,8 +4,8 @@
              x:Class="CapitalLifeIndonesia.Views.Initial.VerificationPage">
     <ContentPage.Content>
         <StackLayout>
-            <Frame Padding="24" CornerRadius="0">
-                <Image Source="ic_logo.png" />
+            <Frame Padding="0" CornerRadius="0">
+                <Image Source="backgroud_top.png" />
             </Frame>
             
             <StackLayout Padding="30,10,30,10">
