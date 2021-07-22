@@ -15547,20 +15547,23 @@ namespace CapitalLifeIndonesia.Droid
 			// aapt resource value: 0x7F0700B6
 			public const int tooltip_frame_light = 2131165366;
 			
-			// aapt resource value: 0x7F0700B9
-			public const int videocam_off = 2131165369;
+			// aapt resource value: 0x7F0700B7
+			public const int verification_failed = 2131165367;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int videocam_on = 2131165370;
-			
-			// aapt resource value: 0x7F0700B7
-			public const int video_chat = 2131165367;
-			
-			// aapt resource value: 0x7F0700B8
-			public const int video_screen = 2131165368;
+			public const int videocam_off = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int xamarin_logo = 2131165371;
+			public const int videocam_on = 2131165371;
+			
+			// aapt resource value: 0x7F0700B8
+			public const int video_chat = 2131165368;
+			
+			// aapt resource value: 0x7F0700B9
+			public const int video_screen = 2131165369;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int xamarin_logo = 2131165372;
 			
 			static Drawable()
 			{

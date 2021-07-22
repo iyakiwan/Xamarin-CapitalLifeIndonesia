@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CapitalLifeIndonesia.Views.Initial.VerificationPage">
+             x:Class="CapitalLifeIndonesia.Views.Initial.VerificationPage"
+             xmlns:local="clr-namespace:CapitalLifeIndonesia.Views.Initial">
     <ContentPage.Content>
         <StackLayout>
+            <local:VerFailView VerticalOptions="CenterAndExpand" x:Name="FailView" >
+            </local:VerFailView>
             <Frame Padding="0" CornerRadius="0">
                 <Image Source="backgroud_top.png" />
             </Frame>
