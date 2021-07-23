@@ -24,6 +24,8 @@ namespace CapitalLifeIndonesia.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             PlatformVonage.Init(this);
+            Rg.Plugins.Popup.Popup.Init();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

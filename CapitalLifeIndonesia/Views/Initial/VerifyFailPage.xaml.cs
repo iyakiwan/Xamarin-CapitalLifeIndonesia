@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace CapitalLifeIndonesia.Views.Initial
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class VerFailView : ContentView
+    public partial class VerifyFailPage : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public VerFailView()
+        public VerifyFailPage()
         {
             InitializeComponent();
         }

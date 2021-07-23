@@ -5,15 +5,21 @@
              xmlns:local="clr-namespace:CapitalLifeIndonesia.Views.Initial">
     <ContentPage.Content>
         <StackLayout>
+            <!--
             <local:VerFailView VerticalOptions="CenterAndExpand" x:Name="FailView" >
             </local:VerFailView>
+            -->
             <Frame Padding="0" CornerRadius="0">
                 <Image Source="backgroud_top.png" />
             </Frame>
             
             <StackLayout Padding="30,10,30,10">
                 <Label Text="Verification" FontSize="Title" TextColor="#932BF5" FontAttributes="Bold" />
-                <Image Source="ic_verification.png" />
+                <Image Source="ic_verification.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LabelFailed_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <Label FontSize="17" Margin="0,20,0,0" FontAttributes="Bold" HorizontalOptions="Center">
                     <Label.FormattedText>
                         <FormattedString>
