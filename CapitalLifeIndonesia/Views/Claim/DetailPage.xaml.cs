@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,7 +41,8 @@ namespace CapitalLifeIndonesia.Views.Claim
         {
             if (status)
             {
-                await Navigation.PushAsync(new SchedulePage());
+                //await Navigation.PushAsync(new SchedulePage());
+                await Navigation.PushPopupAsync(new SchedulePopUp());
             } else
             {
                 await Navigation.PushAsync(new ClaimPage());

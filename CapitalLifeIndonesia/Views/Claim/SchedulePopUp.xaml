@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+    x:Class="CapitalLifeIndonesia.Views.Claim.SchedulePopUp">
+    <!--You can set an animation in the xaml file or in the csharp code behind-->
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <!--You can use any elements here which are extended from Xamarin.Forms.View-->
+    <StackLayout 
+        VerticalOptions="End" 
+        HorizontalOptions="Center">
+        <Frame IsClippedToBounds="True" HasShadow="True" Padding="32,16" CornerRadius="10" BackgroundColor="White">
+            <StackLayout Padding="10">
+                <Label Text="Claim Insurance" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,10"/>
+                <Label Text="Title" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Entry Placeholder="Enter title appointment" BackgroundColor="#F7F7F7"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Date" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0" Grid.Column="0" Grid.Row="0" />
+                    <DatePicker x:Name="DatePicker" Format="d" Grid.Column="0" Grid.Row="1" />
+
+                    <Label Text="Time" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0" Grid.Column="1" Grid.Row="0" />
+                    <TimePicker x:Name="TImePicker" Format="T" Grid.Column="1" Grid.Row="1" />
+                </Grid>
+                <Button Text="Join Meeting" Margin="0,30,0,0"  x:Name="CreateVideoCall" Clicked="CreateVideoCall_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</pages:PopupPage>
