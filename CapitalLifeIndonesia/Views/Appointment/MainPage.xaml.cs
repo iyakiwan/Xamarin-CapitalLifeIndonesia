@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,8 @@ namespace CapitalLifeIndonesia.Views.Appointment
 
         private async void btnAdd_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddPage());
+            //await Navigation.PushAsync(new AddPage());
+            await Navigation.PushPopupAsync(new AddPopUp());
         }
 
         private void TapEmpty_Tapped(object sender, EventArgs e)
