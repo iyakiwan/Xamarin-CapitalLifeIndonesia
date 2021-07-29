@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapitalLifeIndonesia.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,23 @@ namespace CapitalLifeIndonesia.Views.Initial
             await Navigation.PushAsync(new RegisterPage());
         }
 
-        private async void LoginButton_Clicked(object sender, EventArgs e)
+        private void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            var username = etUsername.Text;
+            var password = etPassword.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                DependencyService.Get<IMessage>().ShortAlert("Semua Inputan Harus di isi");
+            }
+            else
+            {
+                navToVerification();
+            }
+            
+        }
+
+        private async void navToVerification()
         {
             await Navigation.PushAsync(new VerificationPage());
         }

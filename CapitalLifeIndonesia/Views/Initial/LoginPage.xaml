@@ -11,9 +11,9 @@
             <StackLayout Padding="30,10,30,10">
                 <Label Text="Login" FontSize="Title" TextColor="#932BF5" FontAttributes="Bold" />
                 <Label Text="Username" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                <Entry Placeholder="Enter Username" BackgroundColor="#F7F7F7"/>
+                <Entry Placeholder="Enter Username" BackgroundColor="#F7F7F7" x:Name="etUsername"/>
                 <Label Text="Password" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                <Entry Placeholder="Enter Password" IsPassword="True" BackgroundColor="#F7F7F7"/>
+                <Entry Placeholder="Enter Password" IsPassword="True" BackgroundColor="#F7F7F7" x:Name="etPassword"/>
                 <Label Text="Forgot Password" FontSize="17" Margin="0,10,0,0" TextColor="#932BF5" FontAttributes="Bold" />
                 <Button Text="Login" Margin="0,20,0,0" x:Name="LoginButton" Clicked="LoginButton_Clicked"/>
                 <Label FontSize="17" Margin="0,10,0,0">
