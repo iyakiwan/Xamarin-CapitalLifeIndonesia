@@ -11,17 +11,17 @@
                 <StackLayout Padding="30,10,30,10">
                     <Label Text="Register" FontSize="Title" TextColor="#932BF5" FontAttributes="Bold" />
                     <Label Text="Username" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                    <Entry Placeholder="Enter Username" BackgroundColor="#F7F7F7"/>
+                    <Entry Placeholder="Enter Username" BackgroundColor="#F7F7F7" x:Name="etUsername"/>
                     <Label Text="NIK" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                    <Entry Placeholder="Enter number NIK" Keyboard="Numeric" BackgroundColor="#F7F7F7"/>
+                    <Entry Placeholder="Enter number NIK" Keyboard="Numeric" BackgroundColor="#F7F7F7" x:Name="etNIK"/>
                     <Label Text="Date and Place of Birth" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                    <Entry Placeholder="City, dd-mm-yyyy" Keyboard="Plain" BackgroundColor="#F7F7F7"/>
+                    <Entry Placeholder="City, dd-mm-yyyy" Keyboard="Plain" BackgroundColor="#F7F7F7" x:Name="etTTL"/>
                     <Label Text="Email" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                    <Entry Placeholder="example@gmail.com" Keyboard="Email" BackgroundColor="#F7F7F7"/>
+                    <Entry Placeholder="example@gmail.com" Keyboard="Email" BackgroundColor="#F7F7F7" x:Name="etEmail"/>
                     <Label Text="WhatsApp" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                    <Entry Placeholder="Enter no whatsapp" Keyboard="Telephone" BackgroundColor="#F7F7F7"/>
+                    <Entry Placeholder="Enter no whatsapp" Keyboard="Telephone" BackgroundColor="#F7F7F7" x:Name="etNoWhatsApp"/>
                     <Label Text="Phone Number" FontSize="17" Margin="0,10,0,0" TextColor="#121212" FontAttributes="Bold"/>
-                    <Entry Placeholder="Enter phone number" Keyboard="Telephone" BackgroundColor="#F7F7F7"/>
+                    <Entry Placeholder="Enter phone number" Keyboard="Telephone" BackgroundColor="#F7F7F7" x:Name="etNumberPhone"/>
                     <Button Text="Register" Margin="0,20,0,20" x:Name="ButtonRegister" Clicked="ButtonRegister_Clicked"/>
                 </StackLayout>
             </StackLayout>
