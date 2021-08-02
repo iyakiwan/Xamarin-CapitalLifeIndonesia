@@ -47,5 +47,11 @@ namespace CapitalLifeIndonesia.Views.Main
             public string Chat { get; set; }
         }
 
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            stChat.IsVisible = true;
+            txtAnswer.Text = etChat.Text;
+            etChat.Text = "";
+        }
     }
 }

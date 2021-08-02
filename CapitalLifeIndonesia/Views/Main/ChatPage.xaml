@@ -19,7 +19,12 @@
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="#FFA68D" Margin="16,0,0,0" HorizontalOptions="EndAndExpand">
-                    <Label Text="How can we help ?" TextColor="White"/>
+                    <Label Text="Failed to Claim" TextColor="White"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" IsVisible="false" x:Name="stChat">
+                <Frame IsClippedToBounds="True" HasShadow="True" Padding="6" CornerRadius="5" BackgroundColor="#FFA68D" Margin="16,0,0,0" HorizontalOptions="EndAndExpand">
+                    <Label TextColor="White" x:Name="txtAnswer"/>
                 </Frame>
             </StackLayout>
 
@@ -35,8 +40,8 @@
                 </Frame>
             </StackLayout>
             <StackLayout Orientation="Horizontal" VerticalOptions="End">
-                <Entry Placeholder="Type your message here" BackgroundColor="#F7F7F7" TextColor="#AAAAAA" VerticalOptions="EndAndExpand" WidthRequest="300"/>
-                <Image Source="icon_send.png" WidthRequest="36" HeightRequest="36"/>
+                <Entry Placeholder="Type your message here" BackgroundColor="#F7F7F7" TextColor="#AAAAAA" VerticalOptions="EndAndExpand" WidthRequest="300" x:Name="etChat"/>
+                <ImageButton Source="icon_send.png" WidthRequest="36" HeightRequest="36" Clicked="ImageButton_Clicked" BackgroundColor="Transparent"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
