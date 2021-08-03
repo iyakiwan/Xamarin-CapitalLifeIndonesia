@@ -25,7 +25,7 @@
             <StackLayout Padding="10">
                 <Label Text="Create Appointment" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,10,0,10" Grid.ColumnSpan="2" Grid.Row="0" />
                 <Label Text="Title" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                <Entry Placeholder="Enter title appointment" BackgroundColor="#F7F7F7"/>
+                <Entry Placeholder="Enter title appointment" BackgroundColor="#F7F7F7" x:Name="etTitle"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
@@ -40,7 +40,7 @@
                     <DatePicker x:Name="DatePicker" Format="d" Grid.Column="0" Grid.Row="1" />
 
                     <Label Text="Time" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0" Grid.Column="1" Grid.Row="0" />
-                    <TimePicker x:Name="TImePicker" Format="T" Grid.Column="1" Grid.Row="1" />
+                    <TimePicker x:Name="TImePicker" Format="T" Grid.Column="1" Grid.Row="1"  />
                 </Grid>
                 <Button Text="Create" Margin="0,30,0,0"  x:Name="CreateAppoinment" Clicked="CreateAppoinment_Clicked"/>
             </StackLayout>

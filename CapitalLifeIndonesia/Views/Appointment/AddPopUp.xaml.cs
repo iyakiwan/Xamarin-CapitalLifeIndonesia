@@ -1,4 +1,5 @@
-﻿using Rg.Plugins.Popup.Extensions;
+﻿using CapitalLifeIndonesia.Services;
+using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,23 @@ namespace CapitalLifeIndonesia.Views.Appointment
             InitializeComponent();
         }
 
-        private async void CreateAppoinment_Clicked(object sender, EventArgs e)
+        private void CreateAppoinment_Clicked(object sender, EventArgs e)
+        {
+            var title = etTitle.Text;
+            var date = DatePicker.Date.ToString();
+            var time = TImePicker.Time.ToString();
+
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(date) || string.IsNullOrEmpty(time))
+            {
+                DependencyService.Get<IMessage>().ShortAlert("Semua Inputan Harus di isi");
+            }
+            else
+            {
+                navToApoointment();
+            }
+        }
+
+        private async void navToApoointment()
         {
             Navigation.PopPopupAsync();
             await Navigation.PushAsync(new StatusPage());
