@@ -26,7 +26,7 @@
             <StackLayout Padding="10">
                 <Label Text="Claim Insurance" FontSize="Title" TextColor="#121212" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="0,10"/>
                 <Label Text="Title" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                <Entry Placeholder="Enter title appointment" BackgroundColor="#F7F7F7"/>
+                <Entry Placeholder="Enter title appointment" BackgroundColor="#F7F7F7" x:Name="etTitle"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
