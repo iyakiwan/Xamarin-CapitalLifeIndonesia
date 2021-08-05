@@ -37,23 +37,23 @@
                                 <RadioButton Content="Group" />
                             </StackLayout>
                             <Label Text="First Name" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter First Name" BackgroundColor="#F7F7F7"/>
+                            <Entry Placeholder="Enter First Name" BackgroundColor="#F7F7F7" x:Name="etFirstName"/>
                             <Label Text="Last Name" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter First Name" BackgroundColor="#F7F7F7"/>
+                            <Entry Placeholder="Enter Last Name" BackgroundColor="#F7F7F7" x:Name="etLastName"/>
                             <Label Text="Product Name" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter Product Name" BackgroundColor="#F7F7F7"/>
+                            <Entry Placeholder="Enter Product Name" BackgroundColor="#F7F7F7" x:Name="etProductName"/>
                             <Label Text="No. Policy" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter No. Policy" BackgroundColor="#F7F7F7"/>
+                            <Entry Placeholder="Enter No. Policy" BackgroundColor="#F7F7F7" x:Name="etPolicy"/>
                             <Label Text="Date of Birth" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
                             <DatePicker x:Name="startDatePicker" Format="D" />
                             <Label Text="Address" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter Address" BackgroundColor="#F7F7F7" Keyboard="Text"/>
+                            <Entry Placeholder="Enter Address" BackgroundColor="#F7F7F7" Keyboard="Text" x:Name="etAddres"/>
                             <Label Text="Phone" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter Phone" BackgroundColor="#F7F7F7" Keyboard="Telephone"/>
+                            <Entry Placeholder="Enter Phone" BackgroundColor="#F7F7F7" Keyboard="Telephone" x:Name="etPhone"/>
                             <Label Text="Email" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter Email" BackgroundColor="#F7F7F7" Keyboard="Email"/>
+                            <Entry Placeholder="Enter Email" BackgroundColor="#F7F7F7" Keyboard="Email" x:Name="etEmail"/>
                             <Label Text="Cause of Claim" FontSize="16" TextColor="#121212" FontAttributes="Bold" Margin="0,10,0,0"/>
-                            <Entry Placeholder="Enter Cause of Claim" BackgroundColor="#F7F7F7" Keyboard="Email" IsEnabled="False"/>
+                            <Entry Placeholder="Enter Cause of Claim" BackgroundColor="#F7F7F7" Keyboard="Email" IsEnabled="False" x:Name="etClaim"/>
                             <Button Text="Submit" Margin="0,30,0,0" Clicked="OnSubmit" x:Name="Submit"/>
                         </StackLayout>
                     </Frame>

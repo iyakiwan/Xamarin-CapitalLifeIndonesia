@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapitalLifeIndonesia.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,31 @@ namespace CapitalLifeIndonesia.Views.Claim
             await Navigation.PopAsync();
         }
 
-        private async void OnSubmit(object sender, EventArgs e)
+        private void OnSubmit(object sender, EventArgs e)
+        {
+            var fName = etFirstName.Text;
+            var lName = etLastName.Text;
+            var product = etProductName.Text;
+            var policy = etPolicy.Text;
+            var addres = etAddres.Text;
+            var phone = etPhone.Text;
+            var email = etEmail.Text;
+            var claim = etClaim.Text;
+            var date = startDatePicker.Date.ToString();
+
+            if (string.IsNullOrEmpty(fName) || string.IsNullOrEmpty(lName) || string.IsNullOrEmpty(product)
+                || string.IsNullOrEmpty(policy) || string.IsNullOrEmpty(addres) || string.IsNullOrEmpty(phone)
+                || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(claim) || string.IsNullOrEmpty(date))
+            {
+                DependencyService.Get<IMessage>().ShortAlert("Semua Inputan Harus di isi");
+            }
+            else
+            {
+                navToSubmit();
+            }
+        }
+
+        private async void navToSubmit()
         {
             await Navigation.PushAsync(new StatusPage());
         }
