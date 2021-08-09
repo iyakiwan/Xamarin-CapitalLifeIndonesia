@@ -14,10 +14,17 @@ namespace CapitalLifeIndonesia.Views.Initial
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VerificationPage : ContentPage
     {
+        INotificationManager notificationManager;
         public VerificationPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+
+            notificationManager = DependencyService.Get<INotificationManager>();
+
+            string title = "Token Autentifikasi";
+            string message = "Berikut ini code tokennya: 1234";
+            notificationManager.SendNotification(title, message);
         }
 
         private void LabelResend_Tapped(object sender, EventArgs e)

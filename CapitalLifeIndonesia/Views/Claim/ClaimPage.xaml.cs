@@ -13,6 +13,8 @@ namespace CapitalLifeIndonesia.Views.Claim
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ClaimPage : ContentPage
     {
+        private String radioValue = "";
+
         public ClaimPage()
         {
             InitializeComponent();
@@ -38,7 +40,8 @@ namespace CapitalLifeIndonesia.Views.Claim
 
             if (string.IsNullOrEmpty(fName) || string.IsNullOrEmpty(lName) || string.IsNullOrEmpty(product)
                 || string.IsNullOrEmpty(policy) || string.IsNullOrEmpty(addres) || string.IsNullOrEmpty(phone)
-                || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(claim) || string.IsNullOrEmpty(date))
+                || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(claim) || string.IsNullOrEmpty(date)
+                || string.IsNullOrEmpty(radioValue))
             {
                 DependencyService.Get<IMessage>().ShortAlert("Semua Inputan Harus di isi");
             }
@@ -51,6 +54,12 @@ namespace CapitalLifeIndonesia.Views.Claim
         private async void navToSubmit()
         {
             await Navigation.PushAsync(new StatusPage());
+        }
+
+        private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            RadioButton button = sender as RadioButton;
+            radioValue = button.Content.ToString();
         }
     }
 }
